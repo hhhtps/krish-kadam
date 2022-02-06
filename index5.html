@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>krish protfolio</title>
+    <!-- <link rel="stylesheet" href="style5.css"> -->
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    color: white;
+    height: 70px;
+    align-items:center ;
+    background-color: #555;
+    position: sticky;
+    /* border-radius: 20px 0px 20px 0px; */
+    top: 0;
+    left: 0;
+}
+.logo{
+    width: 20%;
+    /* background-color: blue; */
+}
+.logo img{
+    width: 60px;
+    padding-left: 30px;
+}
+.links{
+    /* background-color: blueviolet; */
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+.links ul{
+    display: flex;
+}
+.links ul li{
+    list-style: none;
+    padding: 8px 30px;
+}
+.links ul li a{
+    /* padding: 8px 30px; */
+    color: white;
+    text-decoration: none;
+}
+.links ul li a:hover{
+    /* padding: 8px 30px; */
+    color: grey;
+    /* text-decoration: none; */
+}
+.menu img{
+    width: 50px;  
+    padding-right: 10px;
+    filter: invert(100%);
+    display: none;
+
+}
+.section1{
+    height: 100;
+    background: url("bg7.jpg") ;
+    background-position:center ;
+    background-size: cover;
+    color:white ;
+    height: 100vh;
+    display: flex;
+    
+}
+.content0{
+    display: flex;
+    width: 50%;
+    padding:0px 20px ;
+    margin: auto;
+    height: 50%;
+    background-color:#333 ;
+    border-radius: 40px 0px 40px 0px;
+    border: #555 4px solid;
+    align-items: center;
+ 
+
+}
+.ileft{
+    width: 70%;
+
+}
+.ileft p{
+    padding-bottom: 20px;
+}
+.ileft a{
+padding: 8px 20px;
+background-color:tomato ;
+border-radius: 20px;
+text-decoration: none;
+}
+
+.iright{
+    width: 30%;
+}
+.iright img{
+    width: 100%;
+    border: white 4px solid;
+}
+.section2{
+    text-align:center ;
+}
+.section2 h1{
+    padding: 60px 0px;
+    font-size: 50px;
+}
+.content1{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items:center ;
+    margin-top:50px ;
+    padding: 30px;
+    background-color: lightyellow ;
+    border-radius: 10px;
+    
+}
+.left2{
+    width: 70%;
+
+}
+.left2 h1{
+   font-size: 30px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+.right2{
+    width: 30%;
+}
+.right2 img{
+    width: 100%;
+}
+.section3{
+    text-align:center ;
+
+}
+.section3 h1{
+      padding:60px 0px ;
+      font-size: 50px;
+}
+.content3{
+      /* height: 100px; */
+      width: 30%;
+      margin: auto;
+      background-color: rgb(227, 248, 255) ;
+      margin-top: 60px;
+      display: flex;
+      align-items:center ;
+      padding: 20px 20px;
+
+
+}
+.section4 {
+    width: 100%;
+    text-align: center;
+    height: 91vh;
+    background: url("bg6.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.section4 h1 {
+     margin: 50px 0px;
+     font-size: 50px;
+}
+.input{
+    width: 50%;
+    height: 50vh;
+    border-radius: 23px;
+    margin: auto;
+    display: flex;
+    padding: 60px;
+    flex-direction: column;
+background-color: rgba(0,0,0,0.7); 
+border: #555 solid 4px;
+}
+.input .input1{
+    padding: 10px ;
+    margin: 20px;
+    border-radius: 12px;
+    /* border: none; */
+    border: 0;
+}
+.btn{
+    width: 90px;
+    padding: 8px;
+    margin-left: 20px ;
+}
+
+
+
+@media (max-width:800px) {
+   *{
+       font-size: 2vh;
+    
+    }
+   
+    .menu img{
+        display:block;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: auto;
+        position: sticky;
+        top: 0;
+        left: 0;
+
+    }
+    .links{
+        width: 100%;
+        text-align: center;
+        display: none;  
+    }
+    .links ul{
+        flex-direction: column;       
+        margin: auto;
+        width: 100%;
+      
+    }
+    .links ul li{
+        margin: 30px 0px;
+        /* width: 100%; */
+    }
+    .logo img{
+        padding-top: 13px;
+    }
+   
+    
+    .menu img{
+        position: absolute;
+        top: 8px ;
+        right: 8px;
+
+    
+}
+.section1{
+    height: 60vh;
+  background-color: rgba(0,0,0,0.5);
+  background-blend-mode:darken ;
+}
+.content0 h1{
+    padding-bottom: 10px;
+}
+
+
+.content0{
+   background-color: transparent;
+   border: none;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+}
+.ileft{
+    padding-bottom: 30px;
+}
+.iright{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+.iright img{
+    width: 100%;
+}
+
+
+/* About */
+
+
+.content1{
+    width: 80%;
+    flex-direction: column;
+}
+.right2{
+    width: 100%;
+    
+}
+.right2 img{
+    width: 100%;
+    border-radius: 20px;
+
+}
+/* portfolio */
+
+
+.content3{
+    width: 70%;
+}
+/* contect */
+
+
+.input{
+    width:60% ;
+    /* padding: 0; */
+    /* margin: 0; */
+}
+.input .input1{
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+
+    
+
+}
+.btn{
+    margin-top: 20px;
+}
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="kk2.png" alt="">
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#protfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <img src="menu.jpg.png" alt="">
+        </div>
+    </div>
+    <section class="section1" id="home">
+        <div class="content0">
+            <div class="ileft">
+                <h1>WELLCOME</h1>
+                <p>EXPLORE MY WORLD</p>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="iright">
+                <img src="co1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section2" id="about">
+        <h1>About</h1>
+        <div class="content1">
+            <div class="left2">
+                <h1>skills</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla rem doloremque voluptates! Itaque placeat quod reiciendis aliquid odit accusantium vitae veritatis. Asperiores explicabo alias unde est excepturi odio! Quas minus cupiditate repudiandae placeat eum eligendi sequi!</p>
+
+            </div>
+            <div class="right2">
+                <img src="bg3.jpg" alt="">
+            </div>
+        </div>
+  
+        <div class="content1">
+            <div class="left2">
+                <h1>skills</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla rem doloremque voluptates! Itaque placeat quod reiciendis aliquid odit accusantium vitae veritatis. Asperiores explicabo alias unde est excepturi odio! Quas minus cupiditate repudiandae placeat eum eligendi sequi!</p>
+
+            </div>
+            <div class="right2">
+                <img src="bg3.jpg" alt="">
+            </div>
+        </div>
+        <div class="content1">
+            <div class="left2">
+                <h1>skills</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla rem doloremque voluptates! Itaque placeat quod reiciendis aliquid odit accusantium vitae veritatis. Asperiores explicabo alias unde est excepturi odio! Quas minus cupiditate repudiandae placeat eum eligendi sequi!</p>
+
+            </div>
+            <div class="right2">
+                <img src="bg3.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+    <sectopn class="section3" id="protfolio">
+        <h1>Portfolio</h1>
+        <div class="content3">
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis veritatis ex consectetur consequuntur porro vitae, non placeat quod voluptatibus ad labore maxime atque? Quas quam ab, assumenda commodi ipsa iure!</p>
+        </div>
+        <div class="content3">
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis veritatis ex consectetur consequuntur porro vitae, non placeat quod voluptatibus ad labore maxime atque? Quas quam ab, assumenda commodi ipsa iure!</p>
+        </div>
+        <div class="content3">
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis veritatis ex consectetur consequuntur porro vitae, non placeat quod voluptatibus ad labore maxime atque? Quas quam ab, assumenda commodi ipsa iure!</p>
+        </div>
+        <div class="content3">
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis veritatis ex consectetur consequuntur porro vitae, non placeat quod voluptatibus ad labore maxime atque? Quas quam ab, assumenda commodi ipsa iure!</p>
+        </div>
+     
+    </sectopn>
+    <section class="section4" id="contact">
+        <h1>Contact</h1>
+          <div class="input">
+              <input type="text" class="input1" placeholder="Enter your name">
+              <input type="text" class="input1" placeholder="Enter your e-mail">
+              <input type="number" class="input1" placeholder="your mobile No.">
+              <button class="btn">Submit</button>
+          </div>
+    </section>
+</body>
+
+</html>
